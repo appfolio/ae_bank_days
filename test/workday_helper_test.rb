@@ -6,7 +6,7 @@ require 'ae_bank_days'
 module AeBankDays
   class WorkdayHelperTest < ActiveSupport::TestCase
     def test_constant
-      assert !AeBankDays::WorkdayHelper::HOLIDAYS.empty?
+      refute AeBankDays::WorkdayHelper::HOLIDAYS.empty?
     end
 
     def test_workday__weekday
@@ -16,12 +16,12 @@ module AeBankDays
 
     def test_workday__weekend
       time = Time.parse('2017-10-14 14:30:45 -0500')
-      assert !AeBankDays::WorkdayHelper.workday?(time.to_date)
+      refute AeBankDays::WorkdayHelper.workday?(time.to_date)
     end
 
     def test_workday__holiday
       time = Time.parse('2017-10-09 14:30:45 -0500')
-      assert !AeBankDays::WorkdayHelper.workday?(time.to_date)
+      refute AeBankDays::WorkdayHelper.workday?(time.to_date)
     end
 
     def test_next_banking_day__weekday
