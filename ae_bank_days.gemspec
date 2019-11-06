@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['dev@appfolio.com']
   spec.summary       = 'Gem for finding the next banking date'
   spec.description   = ''
-  spec.homepage      = 'http://github.com/appfolio'
+  spec.homepage      = 'http://github.com/appfolio/ae_bank_days'
   spec.required_ruby_version = ['>= 2.3.3', '< 2.7']
   spec.licenses      = ['MIT']
   spec.metadata['allowed_push_host'] = 'https://rubygems.org'
