@@ -7,7 +7,7 @@ require 'active_support/core_ext/time'
 require 'active_support/core_ext/integer/time'
 
 module AeBankDays
-  class WorkdayHelper
+  class BankDayHelper
     # second * minutes * days * years
     ten_years_from_now = Time.now + 10.years
     HOLIDAYS = Holidays.between(Date.civil(2014, 1, 1), ten_years_from_now, :federalreserve, :observed).map do |holiday|
@@ -15,14 +15,14 @@ module AeBankDays
     end
 
     class << self
-      def workday?(day)
+      def bank_day?(day)
         date = day.to_date
         weekday?(date) && !HOLIDAYS.include?(date)
       end
 
       def next_banking_day(date)
         banking_day = date
-        banking_day += 1 until workday?(banking_day)
+        banking_day += 1 until bank_day?(banking_day)
         banking_day
       end
 
