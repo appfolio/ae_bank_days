@@ -11,12 +11,9 @@ rescue Bundler::BundlerError => e
   exit e.status_code
 end
 
-require 'rake/testtask'
+require 'ae_bank_days'
+require 'minitest/autorun'
+require 'minitest/reporters'
+require 'time'
 
-Rake::TestTask.new(:test) do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/*_test.rb'
-  test.verbose = true
-end
-
-task default: :test
+MiniTest::Reporters.use!
