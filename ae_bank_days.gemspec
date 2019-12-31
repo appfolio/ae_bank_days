@@ -5,23 +5,26 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'ae_bank_days/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'ae_bank_days'
-  spec.version       = AeBankDays::VERSION
-  spec.authors       = ['AppFolio']
-  spec.email         = ['dev@appfolio.com']
-  spec.summary       = 'Gem for finding the next banking date'
-  spec.description   = ''
-  spec.homepage      = 'http://github.com/appfolio/ae_bank_days'
+  spec.name                  = 'ae_bank_days'
+  spec.version               = AeBankDays::VERSION
+  spec.platform              = Gem::Platform::RUBY
+  spec.authors               = ['AppFolio']
+  spec.email                 = ['dev@appfolio.com']
+  spec.summary               = 'Gem for finding the next banking date'
+  spec.description           = spec.summary
+  spec.homepage              = 'http://github.com/appfolio/ae_bank_days'
   spec.required_ruby_version = ['>= 2.3.3', '< 2.7']
-  spec.licenses      = ['MIT']
+  spec.licenses              = ['MIT']
+  spec.files                 = Dir['**/*'].reject { |f| f[%r{^log/}] || f[%r{^pkg/}] }
+  spec.test_files            = spec.files.grep(%r{^(test)/})
+  spec.require_paths         = ['lib']
+
   spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
-  spec.files         = Dir['**/*'].reject { |f| f[%r{^log/}] || f[%r{^pkg/}] }
-  spec.test_files    = spec.files.grep(%r{^(test)/})
-  spec.require_paths = ['lib']
+  spec.add_dependency('holidays', '~> 7.1')
 
-  spec.add_dependency 'activesupport', ['>= 5.2', '< 7']
-  spec.add_dependency 'holidays', '~> 7.1'
-  spec.add_development_dependency 'rake', '>= 12.0'
-  spec.add_development_dependency 'bundler', ['>= 1.10.4', '< 3']
+  spec.add_development_dependency('bundler', ['>= 1.10.4', '< 3'])
+  spec.add_development_dependency('minitest', '>= 5.8')
+  spec.add_development_dependency('minitest-reporters', '>= 1.3')
+  spec.add_development_dependency('rake', '>= 12.0')
 end
