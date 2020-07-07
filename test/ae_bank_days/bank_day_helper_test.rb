@@ -25,6 +25,15 @@ module AeBankDays
       refute BankDayHelper.bank_day?(time.to_date)
     end
 
+    def test_bank_day__saturday_holiday_is_not_observed_on_friday
+      # The federal bank does not observe holidays that fall on Saturday on the preceding Friday as is common.
+      # This test makes sure that these dates are not accidentally marked as holidays.
+      # July 4, 2020 fell on a Saturday. The day before was a generally observed federal holiday, but it was still
+      # a banking day due to the federal banks holiday rules.
+      time = Time.parse('2020-07-03 14:30:45 -0500')
+      assert BankDayHelper.bank_day?(time.to_date)
+    end
+
     def test_next_banking_day__weekday
       time = Time.parse('2017-10-03 14:30:45 -0500')
       assert_equal Date.parse('2017-10-03'), BankDayHelper.next_banking_day(time.to_date)

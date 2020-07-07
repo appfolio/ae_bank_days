@@ -4,7 +4,7 @@ module AeBankDays
   class BankDayHelper
     START_DATE = Date.civil(2014, 1, 1)
     END_DATE   = Date.today.next_year(10)
-    HOLIDAYS   = Holidays.between(START_DATE, END_DATE, :federalreserve, :observed).map do |holiday|
+    HOLIDAYS   = Holidays.between(START_DATE, END_DATE, :federalreservebanks, :observed).map do |holiday|
       holiday[:date]
     end
 
