@@ -4,12 +4,6 @@ require 'test_helper'
 
 module AeBankDays
   class BankDayHelperTest < Minitest::Test
-    def test_constants
-      assert_equal Date.civil(2014, 1, 1), BankDayHelper::START_DATE
-      assert_equal Date.today.next_year(10), BankDayHelper::END_DATE
-      assert BankDayHelper::HOLIDAYS.any?
-    end
-
     def test_bank_day__weekday
       assert BankDayHelper.bank_day?(Date.civil(2017, 10, 3))
     end

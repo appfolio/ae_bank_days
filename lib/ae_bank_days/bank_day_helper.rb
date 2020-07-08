@@ -2,16 +2,12 @@
 
 module AeBankDays
   class BankDayHelper
-    START_DATE = Date.civil(2014, 1, 1)
-    END_DATE   = Date.today.next_year(10)
-    HOLIDAYS   = Holidays.between(START_DATE, END_DATE, :federalreservebanks, :observed).map do |holiday|
-      holiday[:date]
-    end
-
     class << self
+      Holidays.cache_between(Date.today.prev_year, Date.today.next_year(10), :federalreservebanks, :observed)
+
       def bank_day?(day)
         date = day.to_date
-        weekday?(date) && !HOLIDAYS.include?(date)
+        weekday?(date) && Holidays.on(date, :federalreservebanks, :observed).empty?
       end
 
       def next_banking_day(date, number_of_days: 0)
