@@ -14,6 +14,7 @@ end
 require 'ae_bank_days'
 require 'minitest/autorun'
 require 'minitest/reporters'
+require 'mocha/setup'
 require 'time'
 
 MiniTest::Reporters.use!
