@@ -13,6 +13,8 @@ doc
 .bundle
 .idea
 Gemfile.lock
+gemfiles/.bundle/
+gemfiles/*.gemfile.lock
 
 # juwelier generated
 pkg
