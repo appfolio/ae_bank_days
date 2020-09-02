@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'rubygems'
 require 'bundler'
 
 begin
@@ -11,10 +10,18 @@ rescue Bundler::BundlerError => e
   exit e.status_code
 end
 
+if ENV['WITH_COVERAGE'] == 'true'
+  require 'simplecov'
+  SimpleCov.start do
+    enable_coverage :branch
+    add_filter %r{\A/test}
+  end
+end
+
 require 'ae_bank_days'
 require 'minitest/autorun'
 require 'minitest/reporters'
-require 'mocha/setup'
+require 'mocha/minitest'
 require 'time'
 
 MiniTest::Reporters.use!

@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
-lib = File.expand_path('lib', __dir__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'ae_bank_days/version'
+require_relative 'lib/ae_bank_days/version'
 
 Gem::Specification.new do |spec|
   spec.name                  = 'ae_bank_days'
@@ -12,20 +10,14 @@ Gem::Specification.new do |spec|
   spec.email                 = ['dev@appfolio.com']
   spec.summary               = 'Gem for finding the next banking date'
   spec.description           = spec.summary
-  spec.homepage              = 'http://github.com/appfolio/ae_bank_days'
-  spec.required_ruby_version = ['>= 2.3.3', '< 2.7']
+  spec.homepage              = 'https://github.com/appfolio/ae_bank_days'
+  spec.required_ruby_version = '>= 2.3.3'
   spec.licenses              = ['MIT']
-  spec.files                 = Dir['**/*'].reject { |f| f[%r{^log/}] || f[%r{^pkg/}] }
+  spec.files                 = Dir['**/*'].select { |f| f[%r{^(lib/|Gemfile$|Rakefile|README.md|.*gemspec)}] }
   spec.test_files            = spec.files.grep(%r{^(test)/})
   spec.require_paths         = ['lib']
 
   spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
   spec.add_dependency('holidays', '~> 8.3')
-
-  spec.add_development_dependency('bundler', ['>= 1.10.4', '< 3'])
-  spec.add_development_dependency('minitest', '>= 5.8')
-  spec.add_development_dependency('minitest-reporters', '>= 1.3')
-  spec.add_development_dependency('mocha', '>= 1.1')
-  spec.add_development_dependency('rake', '>= 12.0')
 end
