@@ -11,7 +11,7 @@ module AeBankDays
       end
 
       def next_banking_day(date, number_of_days: 0)
-        banking_day = date
+        banking_day = date.to_date
         number_of_days.times do
           banking_day += 1 until bank_day?(banking_day)
           banking_day += 1
@@ -21,7 +21,7 @@ module AeBankDays
       end
 
       def previous_banking_day(date, number_of_days: 0)
-        banking_day = date
+        banking_day = date.to_date
         number_of_days.times do
           banking_day -= 1 until bank_day?(banking_day)
           banking_day -= 1
