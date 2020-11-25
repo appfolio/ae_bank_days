@@ -30,6 +30,18 @@ module AeBankDays
         banking_day
       end
 
+      def current_or_previous_banking_day(day)
+        date = day.to_date
+        date -= 1 until bank_day?(date)
+        date
+      end
+
+      def current_or_next_banking_day(day)
+        date = day.to_date
+        date += 1 until bank_day?(date)
+        date
+      end
+
       private
 
       def weekday?(day)
