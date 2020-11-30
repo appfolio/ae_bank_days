@@ -12,22 +12,24 @@ module AeBankDays
 
       def next_banking_day(date, number_of_days: 0)
         banking_day = date.to_date
+        banking_day += 1
         number_of_days.times do
-          banking_day += 1 until bank_day?(banking_day)
+          banking_day = current_or_next_banking_day(banking_day)
           banking_day += 1
         end
-        banking_day += 1 until bank_day?(banking_day)
-        banking_day
+
+        current_or_next_banking_day(banking_day)
       end
 
       def previous_banking_day(date, number_of_days: 0)
         banking_day = date.to_date
+        banking_day -= 1
         number_of_days.times do
-          banking_day -= 1 until bank_day?(banking_day)
+          banking_day = current_or_previous_banking_day(banking_day)
           banking_day -= 1
         end
-        banking_day -= 1 until bank_day?(banking_day)
-        banking_day
+
+        current_or_previous_banking_day(banking_day)
       end
 
       def current_or_previous_banking_day(day)
