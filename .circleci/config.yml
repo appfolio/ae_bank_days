@@ -1,10 +1,12 @@
 version: 2.1
+
 commands:
   bundle_install_and_test:
     steps:
       - checkout
       - run: sudo gem update --system
       - run: bundle install
+      - run: bundle exec ruby -e "require 'ae_bank_days'"
       - run: bundle exec appraisal install
       - run: bundle exec appraisal rake test
 
