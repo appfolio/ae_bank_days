@@ -57,7 +57,10 @@ module AeBankDays
     end
 
     def test_previous_banking_day__weekday__extra_days
-      assert_equal Date.civil(2017, 10, 2), BankDayHelper.previous_banking_day(Date.civil(2017, 10, 6), number_of_days: 3)
+      assert_equal(
+        Date.civil(2017, 10, 2),
+        BankDayHelper.previous_banking_day(Date.civil(2017, 10, 6), number_of_days: 3)
+      )
     end
 
     def test_previous_banking_day__weekend
@@ -65,7 +68,10 @@ module AeBankDays
     end
 
     def test_previous_banking_day__weekend__extra_days
-      assert_equal Date.civil(2017, 10, 10), BankDayHelper.previous_banking_day(Date.civil(2017, 10, 14), number_of_days: 3)
+      assert_equal(
+        Date.civil(2017, 10, 10),
+        BankDayHelper.previous_banking_day(Date.civil(2017, 10, 14), number_of_days: 3)
+      )
     end
 
     def test_previous_banking_day__holiday
@@ -73,7 +79,10 @@ module AeBankDays
     end
 
     def test_previous_banking_day__holiday__extra_days
-      assert_equal Date.civil(2017, 10, 3), BankDayHelper.previous_banking_day(Date.civil(2017, 10, 9), number_of_days: 3)
+      assert_equal(
+        Date.civil(2017, 10, 3),
+        BankDayHelper.previous_banking_day(Date.civil(2017, 10, 9), number_of_days: 3)
+      )
     end
 
     def test_current_or_previous_banking_day

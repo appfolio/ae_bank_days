@@ -8,4 +8,4 @@ module AeBankDays
   autoload :DateExtensions, 'ae_bank_days/date_extensions'
 end
 
-Date.send :include, AeBankDays::DateExtensions
+Date.prepend(AeBankDays::DateExtensions)
