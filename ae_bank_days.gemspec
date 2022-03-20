@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary               = spec.description
   spec.homepage              = 'https://github.com/appfolio/ae_bank_days'
   spec.license               = 'MIT'
-  spec.files                 = Dir['**/*'].select { |f| f[%r{^(lib/|LICENSE.txt|.*gemspec)}] }
+  spec.files                 = Dir['**/*'].select { |f| f[/^(lib\/|LICENSE.txt|.*gemspec)/] }
   spec.require_paths         = ['lib']
   spec.required_ruby_version = Gem::Requirement.new('>= 2.6.3')
 

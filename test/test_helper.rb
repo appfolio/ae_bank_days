@@ -14,7 +14,7 @@ if ENV['WITH_COVERAGE'] == 'true'
   require 'simplecov'
   SimpleCov.start do
     enable_coverage :branch
-    add_filter %r{\A/test}
+    add_filter(/\A\/test/)
   end
 end
 
