@@ -24,4 +24,9 @@ require 'minitest/reporters'
 require 'mocha/minitest'
 require 'time'
 
-MiniTest::Reporters.use!
+Mocha.configure do |config|
+  config.stubbing_non_existent_method = :prevent
+  config.strict_keyword_argument_matching = true if RUBY_VERSION >= '2.7'
+end
+
+MiniTest::Reporters.use! unless ENV['RM_INFO']

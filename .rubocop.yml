@@ -49,7 +49,19 @@ Metrics/ModuleLength:
 Metrics/PerceivedComplexity:
   Max: 16
 
+Minitest/AssertInDelta:
+  Enabled: false
+
+Minitest/AssertPredicate:
+  Enabled: false
+
+Minitest/EmptyLineBeforeAssertionMethods:
+  Enabled: false
+
 Minitest/MultipleAssertions:
+  Enabled: false
+
+Minitest/RefutePredicate:
   Enabled: false
 
 Naming/BlockForwarding:
