@@ -26,7 +26,7 @@ require 'time'
 
 Mocha.configure do |config|
   config.stubbing_non_existent_method = :prevent
-  config.strict_keyword_argument_matching = true if RUBY_VERSION >= '2.7'
+  config.strict_keyword_argument_matching = true
 end
 
 MiniTest::Reporters.use! unless ENV['RM_INFO']
