@@ -1,0 +1,14 @@
+site_name: ${{ values.name }}
+site_description: ${{ values.description }}
+
+repo_url: https://github.com/appfolio/ae_bank_days
+
+# Instructions for adding pages below:
+#   https://developer.appf.io/docs/default/domain/developer-knowledge-platform/techdocs/setup/repository/
+#   https://developer.appf.io/docs/default/domain/developer-knowledge-platform/techdocs/authoring/navigation/
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core
+  - include-markdown
