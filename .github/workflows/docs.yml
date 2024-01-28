@@ -17,7 +17,7 @@ on:
 
 jobs:
   docs:
-    uses: appfolio/developer-knowledge-platform/.github/workflows/backstage-techdocs-publish.yml@latest
+    uses: appfolio/developer-knowledge-platform/.github/workflows/docs-deploy.yml@latest
     with:
       entity_name: ae-bank-days
     secrets: inherit
