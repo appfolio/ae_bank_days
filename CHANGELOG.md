@@ -2,10 +2,20 @@
 
 ## [Unreleased](https://github.com/appfolio/ae_bank_days/tree/HEAD)
 
-[Full Changelog](https://github.com/appfolio/ae_bank_days/compare/c347cb6b4dc7510c2cb316665165cc0637bd6405...HEAD)
+[Full Changelog](https://github.com/appfolio/ae_bank_days/compare/v2.2.0...HEAD)
 
 **Merged pull requests:**
 
+- Appraise Ruby `3.3.0` [\#22](https://github.com/appfolio/ae_bank_days/pull/22) ([Maimer](https://github.com/Maimer))
+- \[KNOW-138\] Replace docs publishing workflow [\#21](https://github.com/appfolio/ae_bank_days/pull/21) ([modethirteen](https://github.com/modethirteen))
+- PAYZ-120: Adding a page to trigger docs action [\#20](https://github.com/appfolio/ae_bank_days/pull/20) ([BadassBison](https://github.com/BadassBison))
+- Update `rubocop` [\#19](https://github.com/appfolio/ae_bank_days/pull/19) ([Maimer](https://github.com/Maimer))
+- PAYZ-97: add required config for dev portal [\#18](https://github.com/appfolio/ae_bank_days/pull/18) ([BadassBison](https://github.com/BadassBison))
+- Fix minitest deprecation [\#17](https://github.com/appfolio/ae_bank_days/pull/17) ([Maimer](https://github.com/Maimer))
+- Updates for Ruby `2.7.7`, `3.1.3`, `3.2.1` [\#16](https://github.com/appfolio/ae_bank_days/pull/16) ([Maimer](https://github.com/Maimer))
+- Update gems [\#15](https://github.com/appfolio/ae_bank_days/pull/15) ([Maimer](https://github.com/Maimer))
+- Update `rubocop` [\#14](https://github.com/appfolio/ae_bank_days/pull/14) ([Maimer](https://github.com/Maimer))
+- Appraise rubies 2.6.9, 2.7.5, 3.1.0, and Rails 7 [\#13](https://github.com/appfolio/ae_bank_days/pull/13) ([Maimer](https://github.com/Maimer))
 - Bugfix and updates for more accurate date selection [\#11](https://github.com/appfolio/ae_bank_days/pull/11) ([deitrick](https://github.com/deitrick))
 - Increase ruby version range and add CI [\#10](https://github.com/appfolio/ae_bank_days/pull/10) ([Maimer](https://github.com/Maimer))
 - Fix dates [\#9](https://github.com/appfolio/ae_bank_days/pull/9) ([stevenboyd](https://github.com/stevenboyd))
@@ -17,6 +27,10 @@
 - gp - Change naming scheme from workday to bank\_day [\#3](https://github.com/appfolio/ae_bank_days/pull/3) ([grantpaulson6](https://github.com/grantpaulson6))
 - gp - Update version for release [\#2](https://github.com/appfolio/ae_bank_days/pull/2) ([grantpaulson6](https://github.com/grantpaulson6))
 - sb - clean up [\#1](https://github.com/appfolio/ae_bank_days/pull/1) ([stevenboyd](https://github.com/stevenboyd))
+
+## [v2.2.0](https://github.com/appfolio/ae_bank_days/tree/v2.2.0) (2024-02-29)
+
+[Full Changelog](https://github.com/appfolio/ae_bank_days/compare/c347cb6b4dc7510c2cb316665165cc0637bd6405...v2.2.0)
 
 
 
