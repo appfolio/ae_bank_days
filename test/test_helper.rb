@@ -22,6 +22,7 @@ require 'ae_bank_days'
 require 'minitest/autorun'
 require 'minitest/reporters'
 require 'mocha/minitest'
+require 'pry'
 require 'time'
 
 Mocha.configure do |config|
