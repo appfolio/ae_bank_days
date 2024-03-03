@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  title: ae_bank_days
+  description: Simple utility gem to find the next banking day
+  tags:
+    - oss
+  annotations:
+    appfolio.com/package-location: url:https://rubygems.org/gems/ae_bank_days
+    appfolio.com/package-type: gem
+    circleci.com/project-slug: github/appfolio/ae_bank_days
+  name: ae-bank-days
+spec:
+  type: library
+  lifecycle: maintenance
+  owner: bank-sinatra
