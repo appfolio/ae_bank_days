@@ -8,7 +8,6 @@ repo_url: https://github.com/appfolio/ae_bank_days
 #   https://developer.appf.io/docs/default/domain/developer-knowledge-platform/techdocs/authoring/navigation/
 nav:
   - Home: index.md
-  - How to run: how_to_run.md
 
 plugins:
   - techdocs-core
