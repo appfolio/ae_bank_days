@@ -2,7 +2,21 @@
 
 ## [Unreleased](https://github.com/appfolio/ae_bank_days/tree/HEAD)
 
-[Full Changelog](https://github.com/appfolio/ae_bank_days/compare/v2.2.0...HEAD)
+[Full Changelog](https://github.com/appfolio/ae_bank_days/compare/v2.3.0...HEAD)
+
+**Merged pull requests:**
+
+- \[BANK-1370\] Appraise ruby 3.4 [\#26](https://github.com/appfolio/ae_bank_days/pull/26) ([Maimer](https://github.com/Maimer))
+- PAYZ-453: Update index to source readme [\#24](https://github.com/appfolio/ae_bank_days/pull/24) ([BadassBison](https://github.com/BadassBison))
+- Add Backstage catalog metadata file\(s\) [\#23](https://github.com/appfolio/ae_bank_days/pull/23) ([modethirteen](https://github.com/modethirteen))
+
+## [v2.3.0](https://github.com/appfolio/ae_bank_days/tree/v2.3.0) (2025-05-02)
+
+[Full Changelog](https://github.com/appfolio/ae_bank_days/compare/v2.2.0...v2.3.0)
+
+## [v2.2.0](https://github.com/appfolio/ae_bank_days/tree/v2.2.0) (2024-02-29)
+
+[Full Changelog](https://github.com/appfolio/ae_bank_days/compare/c347cb6b4dc7510c2cb316665165cc0637bd6405...v2.2.0)
 
 **Merged pull requests:**
 
@@ -27,10 +41,6 @@
 - gp - Change naming scheme from workday to bank\_day [\#3](https://github.com/appfolio/ae_bank_days/pull/3) ([grantpaulson6](https://github.com/grantpaulson6))
 - gp - Update version for release [\#2](https://github.com/appfolio/ae_bank_days/pull/2) ([grantpaulson6](https://github.com/grantpaulson6))
 - sb - clean up [\#1](https://github.com/appfolio/ae_bank_days/pull/1) ([stevenboyd](https://github.com/stevenboyd))
-
-## [v2.2.0](https://github.com/appfolio/ae_bank_days/tree/v2.2.0) (2024-02-29)
-
-[Full Changelog](https://github.com/appfolio/ae_bank_days/compare/c347cb6b4dc7510c2cb316665165cc0637bd6405...v2.2.0)
 
 
 
