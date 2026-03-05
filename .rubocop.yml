@@ -3,11 +3,11 @@
 # Please keep rules alphabetized within their sections (Style, Metrics, etc)
 # Please keep sections alphabetized and separated from other sections
 
-require:
+plugins:
   - rubocop-minitest
 
 AllCops:
-  TargetRubyVersion: 3.4
+  TargetRubyVersion: 4.0
   NewCops: enable
   SuggestExtensions: false
   Exclude:
