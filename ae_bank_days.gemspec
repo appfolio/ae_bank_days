@@ -12,10 +12,10 @@ Gem::Specification.new do |spec|
   spec.summary       = spec.description
   spec.homepage      = 'https://github.com/appfolio/ae_bank_days'
   spec.license       = 'MIT'
-  spec.files         = Dir['**/*'].select { |f| f[/^(lib\/|LICENSE.txt|.*gemspec)/] }
+  spec.files         = Dir['**/*'].select { |f| f[/^(lib\/|LICENSE.txt|ae_bank_days\.gemspec)/] }
   spec.require_paths = ['lib']
 
-  spec.required_ruby_version = Gem::Requirement.new('< 3.5')
+  spec.required_ruby_version = Gem::Requirement.new('< 4.1')
   spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
   spec.add_dependency('holidays', ['>= 8.3', '< 9'])
