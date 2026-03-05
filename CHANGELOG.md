@@ -2,17 +2,28 @@
 
 ## [Unreleased](https://github.com/appfolio/ae_bank_days/tree/HEAD)
 
-[Full Changelog](https://github.com/appfolio/ae_bank_days/compare/v2.3.0...HEAD)
+[Full Changelog](https://github.com/appfolio/ae_bank_days/compare/v2.4.0...HEAD)
+
+**Merged pull requests:**
+
+- \[BANK-1738\] Update supported Ruby versions to 3.3.10, 3.4.8, 4.0.1 [\#30](https://github.com/appfolio/ae_bank_days/pull/30) ([Maimer](https://github.com/Maimer))
+- \[PAYZ-1115\] chore: change catalog-info.yaml ownership to apm-payments-engineers team [\#29](https://github.com/appfolio/ae_bank_days/pull/29) ([shfung](https://github.com/shfung))
+- Configure NPM and Yarn to use custom NPM package repository [\#28](https://github.com/appfolio/ae_bank_days/pull/28) ([appfolio-sourcegraph-batch-changes[bot]](https://github.com/apps/appfolio-sourcegraph-batch-changes))
+- \[KNOW-154\]: Use CODEOWNERS to determine Developer Portal catalog ownership [\#27](https://github.com/appfolio/ae_bank_days/pull/27) ([modethirteen](https://github.com/modethirteen))
+
+## [v2.4.0](https://github.com/appfolio/ae_bank_days/tree/v2.4.0) (2026-03-05)
+
+[Full Changelog](https://github.com/appfolio/ae_bank_days/compare/v2.3.0...v2.4.0)
+
+## [v2.3.0](https://github.com/appfolio/ae_bank_days/tree/v2.3.0) (2025-05-02)
+
+[Full Changelog](https://github.com/appfolio/ae_bank_days/compare/v2.2.0...v2.3.0)
 
 **Merged pull requests:**
 
 - \[BANK-1370\] Appraise ruby 3.4 [\#26](https://github.com/appfolio/ae_bank_days/pull/26) ([Maimer](https://github.com/Maimer))
 - PAYZ-453: Update index to source readme [\#24](https://github.com/appfolio/ae_bank_days/pull/24) ([BadassBison](https://github.com/BadassBison))
 - Add Backstage catalog metadata file\(s\) [\#23](https://github.com/appfolio/ae_bank_days/pull/23) ([modethirteen](https://github.com/modethirteen))
-
-## [v2.3.0](https://github.com/appfolio/ae_bank_days/tree/v2.3.0) (2025-05-02)
-
-[Full Changelog](https://github.com/appfolio/ae_bank_days/compare/v2.2.0...v2.3.0)
 
 ## [v2.2.0](https://github.com/appfolio/ae_bank_days/tree/v2.2.0) (2024-02-29)
 
