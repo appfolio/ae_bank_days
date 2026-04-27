@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.4.1](https://github.com/appfolio/ae_bank_days/compare/v2.4.0...v2.4.1) (2026-04-27)
+
+
+### Documentation
+
+* update changelog ([5ccc605](https://github.com/appfolio/ae_bank_days/commit/5ccc605f4795be0e05bd253df7a98fb730879334))
+
+
+### Continuous Integration
+
+* add Release Please and gem-releaser workflows for automated releases ([7f564c7](https://github.com/appfolio/ae_bank_days/commit/7f564c71eb563104d17f562e96a0edfead232b05))
+* add Release Please and gem-releaser workflows for automated releases ([22ada29](https://github.com/appfolio/ae_bank_days/commit/22ada29dbed3989fd0d096d94ac5c18180ab36c2))
+
 ## [Unreleased](https://github.com/appfolio/ae_bank_days/tree/HEAD)
 
 [Full Changelog](https://github.com/appfolio/ae_bank_days/compare/v2.4.0...HEAD)
