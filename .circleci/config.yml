@@ -2,12 +2,14 @@ version: 2.1
 
 orbs:
   gem-tool: appfolio/gem-tool@volatile
+  public-packages: https://raw.githubusercontent.com/appfolio/public-packages/v1/orbs/public-packages.yml
 
 workflows:
   rc:
     jobs:
       - gem-tool/rake_test:
           name: test_ruby-<< matrix.ruby_version >>
+          context: appfolio_test_context
           executor_tag: ruby
           matrix:
             parameters:
@@ -15,6 +17,8 @@ workflows:
                 - '4.0.1'
                 - '3.4.8'
                 - '3.3.10'
+          after-checkout-steps:
+            - public-packages/setup
           after-appraisal-install-steps:
             - run:
                 name: Run Rubocop
