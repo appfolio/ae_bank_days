@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.required_ruby_version = Gem::Requirement.new('< 4.1')
-  spec.metadata['allowed_push_host'] = 'https://rubygems.pkg.github.com/appfolio'
+  spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
   spec.add_dependency('holidays', ['>= 8.3', '< 9'])
 end
