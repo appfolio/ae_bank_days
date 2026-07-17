@@ -1,5 +1,39 @@
 # Changelog
 
+## [2.4.1](https://github.com/appfolio/ae_bank_days/compare/v2.4.0...v2.4.1) (2026-07-17)
+
+
+### Bug Fixes
+
+* restore rubygems push host ([cfd83e1](https://github.com/appfolio/ae_bank_days/commit/cfd83e17350a2356e2279c69f0b86338ce19bb93))
+
+
+### Documentation
+
+* update changelog ([5ccc605](https://github.com/appfolio/ae_bank_days/commit/5ccc605f4795be0e05bd253df7a98fb730879334))
+
+
+### Miscellaneous Chores
+
+* migrate catalog-info.yaml metadata into gemspec for gemspec catalog ingestor ([a8b18cc](https://github.com/appfolio/ae_bank_days/commit/a8b18cccfaaa7d966ed32635fc905e917fcaf2b0))
+* migrate npm registry from CodeArtifact to JFrog ([41692f5](https://github.com/appfolio/ae_bank_days/commit/41692f5332fe1683394741ca30d6ee527d348c4a))
+* migrate npm registry from CodeArtifact to JFrog ([38ff98c](https://github.com/appfolio/ae_bank_days/commit/38ff98c23649db9c14ff15245d3f2d2b7a6f869f))
+* standardize CI and test configuration ([fe36498](https://github.com/appfolio/ae_bank_days/commit/fe36498f2189e623cdeeec524e19cfc48f014eb9))
+
+
+### Build System
+
+* migrate gem source from RubyGems to JFrog ([989d5e6](https://github.com/appfolio/ae_bank_days/commit/989d5e6cef1d581aa2e5fc06f29ab4bcfdde4d41))
+
+
+### Continuous Integration
+
+* add id-token permission for OIDC trusted publishing ([1fcdcd7](https://github.com/appfolio/ae_bank_days/commit/1fcdcd786dbe3fe44e196d1a888af92fb19e48f0))
+* add id-token permission for OIDC trusted publishing ([06f7332](https://github.com/appfolio/ae_bank_days/commit/06f7332767c4843bb531999c1c989530ff1a8577))
+* add Release Please and gem-releaser workflows for automated releases ([7f564c7](https://github.com/appfolio/ae_bank_days/commit/7f564c71eb563104d17f562e96a0edfead232b05))
+* add Release Please and gem-releaser workflows for automated releases ([22ada29](https://github.com/appfolio/ae_bank_days/commit/22ada29dbed3989fd0d096d94ac5c18180ab36c2))
+* scope release-please to gem-shipped files ([0b9a428](https://github.com/appfolio/ae_bank_days/commit/0b9a42873adcfbd77b8cd82df692e5ee2bd7ea19))
+
 ## [Unreleased](https://github.com/appfolio/ae_bank_days/tree/HEAD)
 
 [Full Changelog](https://github.com/appfolio/ae_bank_days/compare/v2.4.0...HEAD)
