@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.platform      = Gem::Platform::RUBY
   spec.author        = 'AppFolio'
   spec.email         = 'opensource@appfolio.com'
-  spec.description   = 'Gem for finding the next banking date.'
-  spec.summary       = spec.description
+  spec.description   = 'Calculates the next banking day, accounting for weekends and non-business days.'
+  spec.summary       = 'Gem for finding the next banking date.'
   spec.homepage      = 'https://github.com/appfolio/ae_bank_days'
   spec.license       = 'MIT'
   spec.files         = Dir['**/*'].select { |f| f[/^(lib\/|LICENSE.txt|ae_bank_days\.gemspec)/] }
