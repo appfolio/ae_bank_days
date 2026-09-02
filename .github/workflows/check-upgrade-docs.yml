@@ -1,0 +1,9 @@
+name: Check Upgrade Docs
+
+on:
+  pull_request:
+
+jobs:
+  check-upgrade-docs:
+    uses: appfolio/gem-releaser/.github/workflows/check-upgrade-docs.yml@v1
+    secrets: inherit
