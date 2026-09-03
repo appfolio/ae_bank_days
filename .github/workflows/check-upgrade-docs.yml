@@ -5,5 +5,5 @@ on:
 
 jobs:
   check-upgrade-docs:
-    uses: appfolio/gem-releaser/.github/workflows/check-upgrade-docs.yml@v1
+    uses: appfolio/rubygems-releaser/.github/workflows/check-upgrade-docs.yml@v1
     secrets: inherit
