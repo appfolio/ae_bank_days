@@ -18,5 +18,5 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = Gem::Requirement.new('< 4.1')
   spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
-  spec.add_dependency('holidays', ['>= 8.3', '< 9'])
+  spec.add_dependency('holidays', ['>= 8.3', '< 12'])
 end
